@@ -1,0 +1,470 @@
+@prefix cap: <http://example.org/caps#> .
+@prefix ex: <http://example.org/instance/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cap:BaseballCap a rdfs:Class ;
+    rdfs:label "Baseball Cap" ;
+    rdfs:comment "A type of cap with a rounded crown and a stiff bill projecting in front." ;
+    rdfs:subClassOf cap:Cap .
+
+cap:Beanie a rdfs:Class ;
+    rdfs:label "Beanie" ;
+    rdfs:comment "A type of cap that fits closely to the head, usually made of a knit material." ;
+    rdfs:subClassOf cap:Cap .
+
+cap:BucketHat a rdfs:Class ;
+    rdfs:label "Bucket Hat" ;
+    rdfs:comment "A type of hat with a wide, downward-sloping brim and a soft, rounded crown." ;
+    rdfs:subClassOf cap:Cap .
+
+cap:Cap a rdfs:Class ;
+    rdfs:label "Cap" ;
+    rdfs:comment "A type of headwear designed for various purposes, such as fashion, protection from the sun, or as part of a uniform." ;
+    rdfs:subClassOf gr:ProductOrServiceModel .
+
+cap:CapBuyer a rdfs:Class ;
+    rdfs:label "Cap Buyer" ;
+    rdfs:comment "A person who buys caps." ;
+    rdfs:subClassOf schema1:Person .
+
+cap:CapDelivery a rdfs:Class ;
+    rdfs:label "Cap Delivery" ;
+    rdfs:subClassOf gr:DeliveryMethod .
+
+cap:CapDeliveryMethod a rdfs:Class ;
+    rdfs:label "Cap Delivery Method" ;
+    rdfs:comment "A method for delivering caps.",
+        "The specific delivery method for caps, such as standard shipping, expedited shipping, or pickup in-store." ;
+    rdfs:subClassOf gr:DeliveryMethod .
+
+cap:CapManufacturer a rdfs:Class ;
+    rdfs:label "Cap Manufacturer" ;
+    rdfs:comment "The company or entity that manufactures the cap." ;
+    rdfs:subClassOf gr:BusinessEntity .
+
+cap:CapOffer a rdfs:Class ;
+    rdfs:label "Cap Offer" ;
+    rdfs:comment "An offer for a cap or combination of caps." ;
+    rdfs:subClassOf gr:Offering .
+
+cap:CapSeller a rdfs:Class ;
+    rdfs:label "Cap Seller" ;
+    rdfs:comment "An organization that sells caps." ;
+    rdfs:subClassOf schema1:Organization .
+
+cap:CapTransaction a rdfs:Class ;
+    rdfs:label "Cap Transaction" ;
+    rdfs:comment "A transaction involving the purchase of a cap." ;
+    rdfs:subClassOf gr:BusinessFunction .
+
+cap:FlatCap a rdfs:Class ;
+    rdfs:label "Flat Cap" ;
+    rdfs:comment "A type of cap with a rounded, flat crown and a short, stiff brim in front." ;
+    rdfs:subClassOf cap:Cap .
+
+cap:InstallmentPriceSpecification a rdfs:Class ;
+    rdfs:label "Installment Price Specification" ;
+    rdfs:comment "A price specification for offerings with multiple payment installments." ;
+    rdfs:subClassOf gr:PriceSpecification .
+
+cap:SnapbackCap a rdfs:Class ;
+    rdfs:label "Snapback Cap" ;
+    rdfs:comment "A type of cap with a flat, wide brim and an adjustable snap closure at the back." ;
+    rdfs:subClassOf cap:Cap .
+
+cap:Visor a rdfs:Class ;
+    rdfs:label "Visor" ;
+    rdfs:comment "A type of cap with a wide brim in front to shield the eyes from the sun." ;
+    rdfs:subClassOf cap:Cap .
+
+cap:CapColor a rdf:Property ;
+    rdfs:label "Cap Color" ;
+    rdfs:comment "The color of a cap, such as red, blue, or black." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:CapMaterial a rdf:Property ;
+    rdfs:label "Cap Material" ;
+    rdfs:comment "The material of a cap, such as cotton, polyester, or wool." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:CapSize a rdf:Property ;
+    rdfs:label "Cap Size" ;
+    rdfs:comment "The size of a cap, such as small, medium, or large." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:CapStyle a rdf:Property ;
+    rdfs:label "Cap Style" ;
+    rdfs:comment "The specific style of a cap, such as trucker, flat-brim, or dad cap." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:LogoDesign a rdf:Property ;
+    rdfs:label "Logo Design" ;
+    rdfs:comment "The design or logo featured on a cap." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:brimType a rdf:Property ;
+    rdfs:label "Brim Type" ;
+    rdfs:comment "The type of brim on a cap, such as flat or curved." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:buyer a rdf:Property ;
+    rdfs:label "Buyer" ;
+    rdfs:comment "The buyer involved in the cap transaction." ;
+    rdfs:domain cap:CapTransaction ;
+    rdfs:range schema1:Person ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:buyerID a rdf:Property ;
+    rdfs:label "Buyer ID" ;
+    rdfs:comment "A unique identifier for the cap buyer." ;
+    rdfs:domain cap:CapBuyer ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf schema1:identifier .
+
+cap:closureType a rdf:Property ;
+    rdfs:label "Closure Type" ;
+    rdfs:comment "The type of closure used in a cap, such as snapback, buckle, or fitted." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:crownHeight a rdf:Property ;
+    rdfs:label "Crown Height" ;
+    rdfs:comment "The height of the crown on a cap, such as high, mid, or low profile." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:deliveryCost a rdf:Property ;
+    rdfs:label "Delivery Cost" ;
+    rdfs:comment "The cost of delivering the cap.",
+        "The cost of the delivery method for a cap, in the currency of the country where the product is sold." ;
+    rdfs:domain cap:CapDeliveryMethod ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf gr:hasPriceSpecification,
+        gr:quantitativeProductOrServiceProperty .
+
+cap:deliveryCurrency a rdf:Property ;
+    rdfs:label "Delivery Currency" ;
+    rdfs:comment "The currency of the delivery cost." ;
+    rdfs:domain cap:CapDeliveryMethod ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:hasPriceSpecification .
+
+cap:deliveryRange a rdf:Property ;
+    rdfs:label "Delivery Range" ;
+    rdfs:comment "The geographical range within which a cap can be delivered, such as local, national, or international." ;
+    rdfs:domain cap:CapDeliveryMethod ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:deliveryService a rdf:Property ;
+    rdfs:label "Delivery Service" ;
+    rdfs:comment "The service or company responsible for the delivery of the cap." ;
+    rdfs:domain cap:CapDeliveryMethod ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:deliveryTime a rdf:Property ;
+    rdfs:label "Delivery Time" ;
+    rdfs:comment "The estimated delivery time for a cap, in days.",
+        "The estimated time for the delivery of the cap, in days." ;
+    rdfs:domain cap:CapDeliveryMethod ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:hasCurrency a rdf:Property ;
+    rdfs:label "Has Currency" ;
+    rdfs:comment "The currency for the installment amount in a multiple payment option." ;
+    rdfs:domain cap:InstallmentPriceSpecification ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:hasInstallmentOption a rdf:Property ;
+    rdfs:label "Has Installment Option" ;
+    rdfs:comment "The installment price specification for a multiple payment option." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range cap:InstallmentPriceSpecification ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:installmentAmount a rdf:Property ;
+    rdfs:label "Installment Amount" ;
+    rdfs:comment "The amount to be paid in each installment for a multiple payment option." ;
+    rdfs:domain cap:InstallmentPriceSpecification ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:installments a rdf:Property ;
+    rdfs:label "Installments" ;
+    rdfs:comment "The number of installments for a multiple payment option." ;
+    rdfs:domain cap:InstallmentPriceSpecification ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:manufacturer a rdf:Property ;
+    rdfs:label "Manufacturer" ;
+    rdfs:comment "The manufacturer of a cap." ;
+    rdfs:domain cap:Cap ;
+    rdfs:range cap:CapManufacturer ;
+    rdfs:subPropertyOf gr:qualitativeProductOrServiceProperty .
+
+cap:offer1 a cap:CapOffer ;
+    cap:offerCurrency "USD" ;
+    cap:offerEndDate "2023-05-20" ;
+    cap:offerPrice "30.00" ;
+    cap:offerShippingDetails cap:deliveryMethod1 ;
+    cap:offerStartDate "2023-04-20" ;
+    cap:offerWarranty "1 Year" ;
+    cap:offeredProduct cap:cap1,
+        cap:cap2 .
+
+cap:offer2 a cap:CapOffer ;
+    cap:offerCurrency "USD" ;
+    cap:offerEndDate "2023-06-30" ;
+    cap:offerPrice "25.00" ;
+    cap:offerShippingDetails cap:deliveryMethod2 ;
+    cap:offerStartDate "2023-04-25" ;
+    cap:offerWarranty "6 Months" ;
+    cap:offeredProduct cap:cap3,
+        cap:cap4 .
+
+cap:offerCurrency a rdf:Property ;
+    rdfs:label "Offer Currency" ;
+    rdfs:comment "The currency of the cap offer price." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:hasPriceSpecification .
+
+cap:offerEndDate a rdf:Property ;
+    rdfs:label "Offer End Date" ;
+    rdfs:comment "The end date of the cap offer." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf gr:validThrough .
+
+cap:offerPrice a rdf:Property ;
+    rdfs:label "Offer Price" ;
+    rdfs:comment "The price of the cap offer." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf gr:hasPriceSpecification .
+
+cap:offerShippingDetails a rdf:Property ;
+    rdfs:label "Offer Shipping Details" ;
+    rdfs:comment "The shipping details for the cap offer, such as shipping method, delivery time, and cost." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range cap:CapDeliveryMethod ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:offerStartDate a rdf:Property ;
+    rdfs:label "Offer Start Date" ;
+    rdfs:comment "The start date of the cap offer." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf gr:validFrom .
+
+cap:offerWarranty a rdf:Property ;
+    rdfs:label "Offer Warranty" ;
+    rdfs:comment "The warranty information for the cap offer, in months or years." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:offeredProduct a rdf:Property ;
+    rdfs:label "Offered Product" ;
+    rdfs:comment "The cap or caps included in the offer." ;
+    rdfs:domain cap:CapOffer ;
+    rdfs:range cap:Cap ;
+    rdfs:subPropertyOf gr:includesObject .
+
+cap:seller a rdf:Property ;
+    rdfs:label "Seller" ;
+    rdfs:comment "The seller involved in the cap transaction." ;
+    rdfs:domain cap:CapTransaction ;
+    rdfs:range schema1:Organization ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+cap:seller1 a cap:CapSeller ;
+    cap:sellerID "seller001" .
+
+cap:sellerID a rdf:Property ;
+    rdfs:label "Seller ID" ;
+    rdfs:comment "A unique identifier for the cap seller." ;
+    rdfs:domain cap:CapSeller ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf schema1:identifier .
+
+cap:transaction1 a cap:CapTransaction ;
+    cap:buyer cap:buyer1 ;
+    cap:seller cap:seller2 ;
+    cap:transactionAmount "35.00" ;
+    cap:transactionCurrency "USD" ;
+    cap:transactionDate "2023-04-21" .
+
+cap:transaction2 a cap:CapTransaction ;
+    cap:buyer cap:buyer2 ;
+    cap:seller cap:seller2 ;
+    cap:transactionAmount "35.00" ;
+    cap:transactionCurrency "USD" ;
+    cap:transactionDate "2023-04-27" .
+
+cap:transactionAmount a rdf:Property ;
+    rdfs:label "Transaction Amount" ;
+    rdfs:comment "The total amount paid in the cap transaction." ;
+    rdfs:domain cap:CapTransaction ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf gr:hasPriceSpecification .
+
+cap:transactionCurrency a rdf:Property ;
+    rdfs:label "Transaction Currency" ;
+    rdfs:comment "The currency of the transaction amount." ;
+    rdfs:domain cap:CapTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf gr:hasPriceSpecification .
+
+cap:transactionDate a rdf:Property ;
+    rdfs:label "Transaction Date" ;
+    rdfs:comment "The date when the cap transaction took place." ;
+    rdfs:domain cap:CapTransaction ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf gr:quantitativeProductOrServiceProperty .
+
+ex:capOffer1 a cap:CapOffer ;
+    cap:hasInstallmentOption ex:installmentPriceSpec1,
+        ex:installmentPriceSpec2 ;
+    cap:offerCurrency "USD" ;
+    cap:offerEndDate "2023-04-30"^^xsd:date ;
+    cap:offerPrice "26" ;
+    cap:offerShippingDetails ex:standardShipping ;
+    cap:offerStartDate "2023-04-20"^^xsd:date ;
+    cap:offerWarranty "1 Year" ;
+    cap:offeredProduct ex:blueSnapback .
+
+ex:transaction3 a cap:CapTransaction ;
+    cap:buyer ex:buyer3 ;
+    cap:seller ex:seller3 ;
+    cap:transactionAmount "30.98" ;
+    cap:transactionCurrency "USD" ;
+    cap:transactionDate "2023-04-21"^^xsd:date .
+
+cap:buyer1 a cap:CapBuyer ;
+    cap:buyerID "buyer001" .
+
+cap:buyer2 a cap:CapBuyer ;
+    cap:buyerID "buyer002" .
+
+cap:cap1 a cap:BaseballCap ;
+    cap:CapColor "Blue",
+        "Red" ;
+    cap:CapMaterial "Cotton",
+        "Polyester" ;
+    cap:CapSize "Medium" ;
+    cap:LogoDesign "Team A" ;
+    cap:brimType "Curved" ;
+    cap:closureType "Snapback" ;
+    cap:crownHeight "Mid" ;
+    cap:manufacturer cap:capManufacturer1 .
+
+cap:cap2 a cap:SnapbackCap ;
+    cap:CapColor "Black" ;
+    cap:CapMaterial "Wool" ;
+    cap:CapSize "Large" ;
+    cap:LogoDesign "Team B" ;
+    cap:brimType "Flat" ;
+    cap:closureType "Snapback" ;
+    cap:crownHeight "High" ;
+    cap:manufacturer cap:capManufacturer1 .
+
+cap:cap3 a cap:TruckerCap ;
+    cap:CapColor "Green" ;
+    cap:CapMaterial "Cotton",
+        "Mesh" ;
+    cap:CapSize "Small" ;
+    cap:LogoDesign "Outdoor Adventures" ;
+    cap:closureType "Snapback" ;
+    cap:manufacturer cap:capManufacturer2 .
+
+cap:cap4 a cap:Beanie ;
+    cap:CapColor "Grey" ;
+    cap:CapMaterial "Acrylic" ;
+    cap:CapSize "One Size" ;
+    cap:LogoDesign "Mountaineering Club" ;
+    cap:manufacturer cap:capManufacturer2 .
+
+cap:deliveryMethod1 a cap:CapDeliveryMethod ;
+    cap:deliveryCost "5.00" ;
+    cap:deliveryCurrency "USD" ;
+    cap:deliveryService "Standard Shipping" ;
+    cap:deliveryTime "3" .
+
+cap:deliveryMethod2 a cap:CapDeliveryMethod ;
+    cap:deliveryCost "10.00" ;
+    cap:deliveryCurrency "USD" ;
+    cap:deliveryService "Express Shipping" ;
+    cap:deliveryTime "1" .
+
+ex:blueSnapback a cap:SnapbackCap ;
+    cap:CapColor "Blue" ;
+    cap:CapMaterial "Cotton" ;
+    cap:CapSize "M" ;
+    cap:CapStyle "Flat-brim" ;
+    cap:LogoDesign "ExampleLogo" ;
+    cap:brimType "Flat" ;
+    cap:closureType "Snapback" ;
+    cap:crownHeight "High" ;
+    cap:manufacturer ex:exampleCapManufacturer .
+
+ex:buyer3 a cap:CapBuyer ;
+    cap:buyerID "buyer123" ;
+    schema1:name "John Doe" .
+
+ex:exampleCapManufacturer a cap:CapManufacturer ;
+    schema1:location "USA" ;
+    schema1:name "Example Cap Manufacturer" .
+
+ex:installmentPriceSpec1 a cap:InstallmentPriceSpecification ;
+    cap:hasCurrency "USD" ;
+    cap:installmentAmount 2.60 ;
+    cap:installments 10 .
+
+ex:installmentPriceSpec2 a cap:InstallmentPriceSpecification ;
+    cap:hasCurrency "USD" ;
+    cap:installmentAmount 5.20 ;
+    cap:installments 6 .
+
+ex:seller3 a cap:CapSeller ;
+    cap:sellerID "seller456" ;
+    schema1:name "Caps R Us" .
+
+ex:standardShipping a cap:CapDeliveryMethod ;
+    cap:deliveryCost "4.99" ;
+    cap:deliveryCurrency "USD" ;
+    cap:deliveryRange "National" ;
+    cap:deliveryService "Standard Shipping" ;
+    cap:deliveryTime "5" .
+
+cap:capManufacturer1 a cap:CapManufacturer ;
+    rdfs:label "Cap Manufacturer A" .
+
+cap:capManufacturer2 a cap:CapManufacturer ;
+    rdfs:label "Cap Manufacturer B" .
+
+cap:seller2 a cap:CapSeller ;
+    cap:sellerID "seller002" .
+

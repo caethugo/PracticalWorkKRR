@@ -1,0 +1,2009 @@
+[
+  {
+    "@id": "http://example.org/caps#hasInstallmentOption",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The installment price specification for a multiple payment option."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Has Installment Option"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/caps#InstallmentPriceSpecification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapMaterial",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The material of a cap, such as cotton, polyester, or wool."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/seller3",
+    "@type": [
+      "http://example.org/caps#CapSeller"
+    ],
+    "http://example.org/caps#sellerID": [
+      {
+        "@value": "seller456"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Caps R Us"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/transaction3",
+    "@type": [
+      "http://example.org/caps#CapTransaction"
+    ],
+    "http://example.org/caps#buyer": [
+      {
+        "@id": "http://example.org/instance/buyer3"
+      }
+    ],
+    "http://example.org/caps#seller": [
+      {
+        "@id": "http://example.org/instance/seller3"
+      }
+    ],
+    "http://example.org/caps#transactionAmount": [
+      {
+        "@value": "30.98"
+      }
+    ],
+    "http://example.org/caps#transactionCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#transactionDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-21"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#InstallmentPriceSpecification",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A price specification for offerings with multiple payment installments."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Installment Price Specification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#PriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offerShippingDetails",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The shipping details for the cap offer, such as shipping method, delivery time, and cost."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offer Shipping Details"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/caps#CapDeliveryMethod"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapStyle",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The specific style of a cap, such as trucker, flat-brim, or dad cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Style"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#capManufacturer1",
+    "@type": [
+      "http://example.org/caps#CapManufacturer"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Manufacturer A"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#installmentAmount",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The amount to be paid in each installment for a multiple payment option."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#InstallmentPriceSpecification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Installment Amount"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#sellerID",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A unique identifier for the cap seller."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapSeller"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Seller ID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://schema.org/identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/capOffer1",
+    "@type": [
+      "http://example.org/caps#CapOffer"
+    ],
+    "http://example.org/caps#hasInstallmentOption": [
+      {
+        "@id": "http://example.org/instance/installmentPriceSpec1"
+      },
+      {
+        "@id": "http://example.org/instance/installmentPriceSpec2"
+      }
+    ],
+    "http://example.org/caps#offerCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#offerEndDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-30"
+      }
+    ],
+    "http://example.org/caps#offerPrice": [
+      {
+        "@value": "26"
+      }
+    ],
+    "http://example.org/caps#offerShippingDetails": [
+      {
+        "@id": "http://example.org/instance/standardShipping"
+      }
+    ],
+    "http://example.org/caps#offerStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-20"
+      }
+    ],
+    "http://example.org/caps#offerWarranty": [
+      {
+        "@value": "1 Year"
+      }
+    ],
+    "http://example.org/caps#offeredProduct": [
+      {
+        "@id": "http://example.org/instance/blueSnapback"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/installmentPriceSpec1",
+    "@type": [
+      "http://example.org/caps#InstallmentPriceSpecification"
+    ],
+    "http://example.org/caps#hasCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#installmentAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2.60"
+      }
+    ],
+    "http://example.org/caps#installments": [
+      {
+        "@value": 10
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offerPrice",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The price of the cap offer."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offer Price"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasPriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#closureType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The type of closure used in a cap, such as snapback, buckle, or fitted."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Closure Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapDelivery",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Delivery"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#DeliveryMethod"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapTransaction",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A transaction involving the purchase of a cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Transaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#BusinessFunction"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryService",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The service or company responsible for the delivery of the cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapDeliveryMethod"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Delivery Service"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapSize",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The size of a cap, such as small, medium, or large."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Size"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offerWarranty",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The warranty information for the cap offer, in months or years."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offer Warranty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#cap2",
+    "@type": [
+      "http://example.org/caps#SnapbackCap"
+    ],
+    "http://example.org/caps#CapColor": [
+      {
+        "@value": "Black"
+      }
+    ],
+    "http://example.org/caps#CapMaterial": [
+      {
+        "@value": "Wool"
+      }
+    ],
+    "http://example.org/caps#CapSize": [
+      {
+        "@value": "Large"
+      }
+    ],
+    "http://example.org/caps#LogoDesign": [
+      {
+        "@value": "Team B"
+      }
+    ],
+    "http://example.org/caps#brimType": [
+      {
+        "@value": "Flat"
+      }
+    ],
+    "http://example.org/caps#closureType": [
+      {
+        "@value": "Snapback"
+      }
+    ],
+    "http://example.org/caps#crownHeight": [
+      {
+        "@value": "High"
+      }
+    ],
+    "http://example.org/caps#manufacturer": [
+      {
+        "@id": "http://example.org/caps#capManufacturer1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#cap4",
+    "@type": [
+      "http://example.org/caps#Beanie"
+    ],
+    "http://example.org/caps#CapColor": [
+      {
+        "@value": "Grey"
+      }
+    ],
+    "http://example.org/caps#CapMaterial": [
+      {
+        "@value": "Acrylic"
+      }
+    ],
+    "http://example.org/caps#CapSize": [
+      {
+        "@value": "One Size"
+      }
+    ],
+    "http://example.org/caps#LogoDesign": [
+      {
+        "@value": "Mountaineering Club"
+      }
+    ],
+    "http://example.org/caps#manufacturer": [
+      {
+        "@id": "http://example.org/caps#capManufacturer2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#brimType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The type of brim on a cap, such as flat or curved."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Brim Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#hasCurrency",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The currency for the installment amount in a multiple payment option."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#InstallmentPriceSpecification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Has Currency"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapSeller",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An organization that sells caps."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Seller"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://schema.org/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapBuyer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A person who buys caps."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Buyer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://schema.org/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#transaction2",
+    "@type": [
+      "http://example.org/caps#CapTransaction"
+    ],
+    "http://example.org/caps#buyer": [
+      {
+        "@id": "http://example.org/caps#buyer2"
+      }
+    ],
+    "http://example.org/caps#seller": [
+      {
+        "@id": "http://example.org/caps#seller2"
+      }
+    ],
+    "http://example.org/caps#transactionAmount": [
+      {
+        "@value": "35.00"
+      }
+    ],
+    "http://example.org/caps#transactionCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#transactionDate": [
+      {
+        "@value": "2023-04-27"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/installmentPriceSpec2",
+    "@type": [
+      "http://example.org/caps#InstallmentPriceSpecification"
+    ],
+    "http://example.org/caps#hasCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#installmentAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "5.20"
+      }
+    ],
+    "http://example.org/caps#installments": [
+      {
+        "@value": 6
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapDeliveryMethod",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The specific delivery method for caps, such as standard shipping, expedited shipping, or pickup in-store."
+      },
+      {
+        "@value": "A method for delivering caps."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Delivery Method"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#DeliveryMethod"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryMethod1",
+    "@type": [
+      "http://example.org/caps#CapDeliveryMethod"
+    ],
+    "http://example.org/caps#deliveryCost": [
+      {
+        "@value": "5.00"
+      }
+    ],
+    "http://example.org/caps#deliveryCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#deliveryService": [
+      {
+        "@value": "Standard Shipping"
+      }
+    ],
+    "http://example.org/caps#deliveryTime": [
+      {
+        "@value": "3"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapOffer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An offer for a cap or combination of caps."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Offer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#Offering"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#transactionAmount",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The total amount paid in the cap transaction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapTransaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Transaction Amount"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasPriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/buyer3",
+    "@type": [
+      "http://example.org/caps#CapBuyer"
+    ],
+    "http://example.org/caps#buyerID": [
+      {
+        "@value": "buyer123"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "John Doe"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#seller",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The seller involved in the cap transaction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapTransaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Seller"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://schema.org/Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#cap1",
+    "@type": [
+      "http://example.org/caps#BaseballCap"
+    ],
+    "http://example.org/caps#CapColor": [
+      {
+        "@value": "Red"
+      },
+      {
+        "@value": "Blue"
+      }
+    ],
+    "http://example.org/caps#CapMaterial": [
+      {
+        "@value": "Cotton"
+      },
+      {
+        "@value": "Polyester"
+      }
+    ],
+    "http://example.org/caps#CapSize": [
+      {
+        "@value": "Medium"
+      }
+    ],
+    "http://example.org/caps#LogoDesign": [
+      {
+        "@value": "Team A"
+      }
+    ],
+    "http://example.org/caps#brimType": [
+      {
+        "@value": "Curved"
+      }
+    ],
+    "http://example.org/caps#closureType": [
+      {
+        "@value": "Snapback"
+      }
+    ],
+    "http://example.org/caps#crownHeight": [
+      {
+        "@value": "Mid"
+      }
+    ],
+    "http://example.org/caps#manufacturer": [
+      {
+        "@id": "http://example.org/caps#capManufacturer1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryRange",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The geographical range within which a cap can be delivered, such as local, national, or international."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapDeliveryMethod"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Delivery Range"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offeredProduct",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The cap or caps included in the offer."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offered Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#includesObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#buyer1",
+    "@type": [
+      "http://example.org/caps#CapBuyer"
+    ],
+    "http://example.org/caps#buyerID": [
+      {
+        "@value": "buyer001"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#crownHeight",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The height of the crown on a cap, such as high, mid, or low profile."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Crown Height"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryCurrency",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The currency of the delivery cost."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapDeliveryMethod"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Delivery Currency"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasPriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#seller1",
+    "@type": [
+      "http://example.org/caps#CapSeller"
+    ],
+    "http://example.org/caps#sellerID": [
+      {
+        "@value": "seller001"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#BaseballCap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of cap with a rounded crown and a stiff bill projecting in front."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Baseball Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapColor",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The color of a cap, such as red, blue, or black."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Color"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#BucketHat",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of hat with a wide, downward-sloping brim and a soft, rounded crown."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Bucket Hat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#transactionDate",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The date when the cap transaction took place."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapTransaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Transaction Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#buyerID",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A unique identifier for the cap buyer."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapBuyer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Buyer ID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://schema.org/identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#transactionCurrency",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The currency of the transaction amount."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapTransaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Transaction Currency"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasPriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#Cap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of headwear designed for various purposes, such as fashion, protection from the sun, or as part of a uniform."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#buyer2",
+    "@type": [
+      "http://example.org/caps#CapBuyer"
+    ],
+    "http://example.org/caps#buyerID": [
+      {
+        "@value": "buyer002"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/standardShipping",
+    "@type": [
+      "http://example.org/caps#CapDeliveryMethod"
+    ],
+    "http://example.org/caps#deliveryCost": [
+      {
+        "@value": "4.99"
+      }
+    ],
+    "http://example.org/caps#deliveryCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#deliveryRange": [
+      {
+        "@value": "National"
+      }
+    ],
+    "http://example.org/caps#deliveryService": [
+      {
+        "@value": "Standard Shipping"
+      }
+    ],
+    "http://example.org/caps#deliveryTime": [
+      {
+        "@value": "5"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#capManufacturer2",
+    "@type": [
+      "http://example.org/caps#CapManufacturer"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Manufacturer B"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offer1",
+    "@type": [
+      "http://example.org/caps#CapOffer"
+    ],
+    "http://example.org/caps#offerCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#offerEndDate": [
+      {
+        "@value": "2023-05-20"
+      }
+    ],
+    "http://example.org/caps#offerPrice": [
+      {
+        "@value": "30.00"
+      }
+    ],
+    "http://example.org/caps#offerShippingDetails": [
+      {
+        "@id": "http://example.org/caps#deliveryMethod1"
+      }
+    ],
+    "http://example.org/caps#offerStartDate": [
+      {
+        "@value": "2023-04-20"
+      }
+    ],
+    "http://example.org/caps#offerWarranty": [
+      {
+        "@value": "1 Year"
+      }
+    ],
+    "http://example.org/caps#offeredProduct": [
+      {
+        "@id": "http://example.org/caps#cap1"
+      },
+      {
+        "@id": "http://example.org/caps#cap2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#cap3",
+    "@type": [
+      "http://example.org/caps#TruckerCap"
+    ],
+    "http://example.org/caps#CapColor": [
+      {
+        "@value": "Green"
+      }
+    ],
+    "http://example.org/caps#CapMaterial": [
+      {
+        "@value": "Cotton"
+      },
+      {
+        "@value": "Mesh"
+      }
+    ],
+    "http://example.org/caps#CapSize": [
+      {
+        "@value": "Small"
+      }
+    ],
+    "http://example.org/caps#LogoDesign": [
+      {
+        "@value": "Outdoor Adventures"
+      }
+    ],
+    "http://example.org/caps#closureType": [
+      {
+        "@value": "Snapback"
+      }
+    ],
+    "http://example.org/caps#manufacturer": [
+      {
+        "@id": "http://example.org/caps#capManufacturer2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#transaction1",
+    "@type": [
+      "http://example.org/caps#CapTransaction"
+    ],
+    "http://example.org/caps#buyer": [
+      {
+        "@id": "http://example.org/caps#buyer1"
+      }
+    ],
+    "http://example.org/caps#seller": [
+      {
+        "@id": "http://example.org/caps#seller2"
+      }
+    ],
+    "http://example.org/caps#transactionAmount": [
+      {
+        "@value": "35.00"
+      }
+    ],
+    "http://example.org/caps#transactionCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#transactionDate": [
+      {
+        "@value": "2023-04-21"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offerEndDate",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The end date of the cap offer."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offer End Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#validThrough"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryMethod2",
+    "@type": [
+      "http://example.org/caps#CapDeliveryMethod"
+    ],
+    "http://example.org/caps#deliveryCost": [
+      {
+        "@value": "10.00"
+      }
+    ],
+    "http://example.org/caps#deliveryCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#deliveryService": [
+      {
+        "@value": "Express Shipping"
+      }
+    ],
+    "http://example.org/caps#deliveryTime": [
+      {
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/blueSnapback",
+    "@type": [
+      "http://example.org/caps#SnapbackCap"
+    ],
+    "http://example.org/caps#CapColor": [
+      {
+        "@value": "Blue"
+      }
+    ],
+    "http://example.org/caps#CapMaterial": [
+      {
+        "@value": "Cotton"
+      }
+    ],
+    "http://example.org/caps#CapSize": [
+      {
+        "@value": "M"
+      }
+    ],
+    "http://example.org/caps#CapStyle": [
+      {
+        "@value": "Flat-brim"
+      }
+    ],
+    "http://example.org/caps#LogoDesign": [
+      {
+        "@value": "ExampleLogo"
+      }
+    ],
+    "http://example.org/caps#brimType": [
+      {
+        "@value": "Flat"
+      }
+    ],
+    "http://example.org/caps#closureType": [
+      {
+        "@value": "Snapback"
+      }
+    ],
+    "http://example.org/caps#crownHeight": [
+      {
+        "@value": "High"
+      }
+    ],
+    "http://example.org/caps#manufacturer": [
+      {
+        "@id": "http://example.org/instance/exampleCapManufacturer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#FlatCap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of cap with a rounded, flat crown and a short, stiff brim in front."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Flat Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#seller2",
+    "@type": [
+      "http://example.org/caps#CapSeller"
+    ],
+    "http://example.org/caps#sellerID": [
+      {
+        "@value": "seller002"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offerStartDate",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The start date of the cap offer."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offer Start Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#validFrom"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#SnapbackCap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of cap with a flat, wide brim and an adjustable snap closure at the back."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Snapback Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/instance/exampleCapManufacturer",
+    "@type": [
+      "http://example.org/caps#CapManufacturer"
+    ],
+    "http://schema.org/location": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Example Cap Manufacturer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#installments",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The number of installments for a multiple payment option."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#InstallmentPriceSpecification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Installments"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#buyer",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The buyer involved in the cap transaction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapTransaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Buyer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://schema.org/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#LogoDesign",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The design or logo featured on a cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Logo Design"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#CapManufacturer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The company or entity that manufactures the cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cap Manufacturer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#BusinessEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryCost",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The cost of the delivery method for a cap, in the currency of the country where the product is sold."
+      },
+      {
+        "@value": "The cost of delivering the cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapDeliveryMethod"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Delivery Cost"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      },
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasPriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#manufacturer",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The manufacturer of a cap."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Manufacturer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/caps#CapManufacturer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offerCurrency",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The currency of the cap offer price."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapOffer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Offer Currency"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasPriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#offer2",
+    "@type": [
+      "http://example.org/caps#CapOffer"
+    ],
+    "http://example.org/caps#offerCurrency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/caps#offerEndDate": [
+      {
+        "@value": "2023-06-30"
+      }
+    ],
+    "http://example.org/caps#offerPrice": [
+      {
+        "@value": "25.00"
+      }
+    ],
+    "http://example.org/caps#offerShippingDetails": [
+      {
+        "@id": "http://example.org/caps#deliveryMethod2"
+      }
+    ],
+    "http://example.org/caps#offerStartDate": [
+      {
+        "@value": "2023-04-25"
+      }
+    ],
+    "http://example.org/caps#offerWarranty": [
+      {
+        "@value": "6 Months"
+      }
+    ],
+    "http://example.org/caps#offeredProduct": [
+      {
+        "@id": "http://example.org/caps#cap3"
+      },
+      {
+        "@id": "http://example.org/caps#cap4"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#deliveryTime",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The estimated delivery time for a cap, in days."
+      },
+      {
+        "@value": "The estimated time for the delivery of the cap, in days."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/caps#CapDeliveryMethod"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Delivery Time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#Beanie",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of cap that fits closely to the head, usually made of a knit material."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Beanie"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/caps#Visor",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of cap with a wide brim in front to shield the eyes from the sun."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Visor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/caps#Cap"
+      }
+    ]
+  }
+]
